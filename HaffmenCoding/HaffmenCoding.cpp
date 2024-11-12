@@ -28,7 +28,7 @@ Node* createNode(char ch, int freq, Node* left, Node* right) {
 
 struct comparator {
     bool operator()(Node* l, Node* r) {
-        // Больший приоритет имеет объект с меньшей частотой. ??? Как работают компараторы в приоритетных очередях.
+        // Больший приоритет имеет объект с меньшей частотой.
         return l->freq > r->freq;
     }
 };
